@@ -2,8 +2,10 @@ import { Clock } from './Clock'
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
-  <div>
-      <div id="clock"></div>
+  <div class="main_body">
+      <h1>Clock</h1>
+      <div id="clock">
+      </div>
   </div>
 `
 
