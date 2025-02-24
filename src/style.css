@@ -9,31 +9,46 @@ html {
 }
 
 body {
-	background-color: rgb(123, 40, 221);
+	background-color: #f0f4f8;
+	font-family: 'Arial, sans-serif';
 	font-size: 1.6rem;
 	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 4rem;
 }
 
 .main_body {
-	padding: 6rem 4rem;
-	color: #bde0fe;
-	min-height: 100dvh;
+	padding: 4rem;
+	color: #333;
+	height: fit-content;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
 }
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	color: #0077b6;
+}
+
 #clock {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 .clock_container {
 	padding: 0rem 0rem;
 	width: 65rem;
 	color: #333;
-	box-shadow: #263753 0px 0px 10px;
-}
-.clock_container > * {
-	margin-bottom: 5rem;
 }
 
 .clock_counter {
@@ -72,22 +87,81 @@ body {
 .btn {
 	text-transform: capitalize;
 	padding: 1rem 3rem;
-	background-color: #723bb1;
-	color: #ffffff;
 	border-radius: 8px;
 	font-size: 2rem;
 	outline: none;
 	border: none;
+	color: #3d405b;
 	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-start {
+	background-color: #57cc99;
+}
+
+.btn-stop {
+	background-color: #dc3545;
+}
+
+.btn-reset {
+	background-color: #ffc107;
+}
+
+.btn-lap {
+	background-color: #1987fd;
+}
+
+.btn:hover {
+	transform: scale(1.05);
+}
+
+.btn:active {
+	transform: scale(0.95);
+}
+
+.btn-start:hover {
+	background-color: #4fb689;
+}
+
+.btn-stop:hover {
+	background-color: #c82333;
+}
+
+.btn-reset:hover {
+	background-color: #e0a800;
+}
+
+.btn-lap:hover {
+	background-color: #0373e9;
 }
 
 .clock_header-lap {
-	padding: 1.3rem 3rem;
+	padding: 1rem 3rem;
 	width: 78%;
 	margin-inline: auto;
 	font-size: 7rem;
 }
 
+.clock_lap {
+	max-height: 30rem;
+	overflow-y: auto;
+	padding-right: 1rem;
+}
+
+.clock_lap::-webkit-scrollbar {
+	width: 8px;
+}
+
+.clock_lap::-webkit-scrollbar-thumb {
+	background-color: #0077b6;
+	border-radius: 4px;
+}
+
+.clock_lap::-webkit-scrollbar-thumb:hover {
+	background-color: #0056b3;
+}
+
 .clock_lap > * {
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
