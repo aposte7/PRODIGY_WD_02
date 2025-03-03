@@ -165,3 +165,43 @@ h1 {
 .clock_lap > * {
 	margin-bottom: 1rem;
 }
+@media (max-width: 1080px) {
+	html {
+		font-size: 50.5%;
+	}
+}
+@media (max-width: 680px) {
+	html {
+		font-size: 40.5%;
+	}
+}
+@media (max-width: 610px) {
+	html {
+		font-size: 35.5%;
+	}
+}
+@media (max-width: 490px) {
+	html {
+		font-size: 30.5%;
+	}
+}
+@media (max-width: 438px) {
+	html {
+		font-size: 25.5%;
+	}
+}
+@media (max-width: 372px) {
+	html {
+		font-size: 20.5%;
+	}
+}
+@media (max-width: 228px) {
+	html {
+		font-size: 15.5%;
+	}
+}
+@media (max-width: 210px) {
+	html {
+		font-size: 10.5%;
+	}
+}
